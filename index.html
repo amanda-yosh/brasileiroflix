@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Brasileiroflix | Um clone da Netflix</title>
+
+  <!-- FONT FAMILY -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <!-- OWL CSS -->
+  <link rel="stylesheet" href="./styles/owl.carousel.min.css">
+  <link rel="stylesheet" href="./styles/owl.theme.default.min.css">
+
+</head>
+<body>
+
+
+  <!-- BIDEO -->
+  <div id="container">
+    <video id="background_video" loop muted></video>
+    <div id="video_cover"></div>
+    <div id="overlay"></div>
+
+    <div id="video_controls">
+      <span id="play">
+        <img src="play.png">
+      </span>
+      <span id="pause">
+        <img src="pause.png">
+      </span>
+    </div>
+
+    <!-- MEU -->
+    <header>
+      <a href="">
+        <img src="./img/logo.png" alt="Logo Brasileiroflix">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Filmes</a></li>
+          <li><a href="#">Séries</a></li>
+          <li><a href="#">Documentários</a></li>
+          <li><a href="#">Minha Lista</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Buscar">
+        <i class="fas fa-search"></i>
+      </div>
+    </header>
+
+    <section id="main_content">
+      <div id="head">
+        <h2>Cidade de Deus</h2>
+        <h4>
+          <span>2002</span>
+          <span><i>+18</i></span>
+          <span>2h 15min</span>
+          <span>Drama, Policial</span>
+        </h4>
+        <h3>"Se correr o bicho pega. Se ficar o bicho come."</h3>
+        <p>Buscapé é um jovem morador da Cidade de Deus que cresce em meio à violência. Com medo de se tornar um bandido, enxerga na fotografia uma oportunidade de ter uma vida digna.</p>
+        <div class="buttons">
+          <button role="button" class="button">
+            <i class="fas fa-play"></i>
+            ASSISTIR
+          </button>
+          <button role="button" class="botao">
+            <i class="fas fa-info-circle"></i>
+            INFORMAÇÕES
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <!--<section id="main_content">
+
+
+    </section>-->
+
+  <!-- CAROUSEL -->
+  <div class="carrosel-filmes">
+    <h2>Filmes</h2>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img class=".box-filme" src="./img/mini1.jpg" alt="Miniatura do Filme">
+        </div>
+        <div class="item">
+            <img class=".box-filme" src="./img/mini2.jpg" alt="Miniatura do Filme">
+        </div>
+        <div class="item">
+            <img class=".box-filme" src="./img/mini3.jpg" alt="Miniatura do Filme">
+        </div>
+        <div class="item">
+            <img class=".box-filme" src="./img/mini4.jpg" alt="Miniatura do Filme">
+        </div>
+        <div class="item">
+            <img class=".box-filme" src="./img/mini5.jpg" alt="Miniatura do Filme">
+        </div>
+        <div class="item">
+            <img class=".box-filme" src="./img/mini6.jpg" alt="Miniatura do Filme">
+        </div>
+        <div class="item">
+            <img class=".box-filme" src="./img/mini7.jpg" alt="Miniatura do Filme">
+        </div>
+        <div class="item">
+            <img class=".box-filme" src="./img/mini8.jpg" alt="Miniatura do Filme">
+        </div>
+        <div class="item">
+            <img class=".box-filme" src="./img/mini9.jpg" alt="Miniatura do Filme">
+        </div>
+        <div class="item">
+            <img class=".box-filme" src="./img/mini10.jpg" alt="Miniatura do Filme">
+        </div>
+    </div>
+  </div>
+
+  <!-- BIDEO SCRIPT -->
+  <script src="./js/bideo.js"></script>
+  <script src="./js/main.js"></script>
+
+  <script>
+    if (window.location.host.indexOf('github.io') !== -1 && window.location.protocol !== "https:") {
+      window.location.protocol = "https";
+    }
+  </script>
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/d2aff15604.js" crossorigin="anonymous"></script>
+
+  <!-- OWL SCRIPT --> 
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/setup.js"></script>
+</body>
+</html>
