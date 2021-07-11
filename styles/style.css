@@ -432,3 +432,31 @@ aside p:first-child {
   color: #fff;
   padding: .5rem;
 }
+
+/* RESPONSIVIDADE */
+@media (max-width: 991px)
+{
+  header {
+    display: flex;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+
+  #main_content #head {
+    margin-top: 200px;
+  }
+
+  #main_content #head p {
+    width: 90%;
+  }
+
+  /* MODAL */
+}
