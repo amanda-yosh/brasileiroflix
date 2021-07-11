@@ -68,11 +68,11 @@
         <h3>"Se correr o bicho pega. Se ficar o bicho come."</h3>
         <p>Buscapé é um jovem morador da Cidade de Deus que cresce em meio à violência. Com medo de se tornar um bandido, enxerga na fotografia uma oportunidade de ter uma vida digna.</p>
         <div class="buttons">
-          <button role="button" class="button">
+          <button role="button" class="button play">
             <i class="fas fa-play"></i>
             ASSISTIR
           </button>
-          <button role="button" class="botao">
+          <button onclick="abrirModal()" role="button" class="button">
             <i class="fas fa-info-circle"></i>
             INFORMAÇÕES
           </button>
@@ -80,11 +80,6 @@
       </div>
     </section>
   </div>
-
-    <!--<section id="main_content">
-
-
-    </section>-->
 
   <!-- CAROUSEL -->
   <div class="carrosel-filmes">
@@ -123,6 +118,50 @@
     </div>
   </div>
 
+  <!-- MODAL -->
+  <div class="modal-overlay">
+    <div class="modal">
+        <div class="modal-header">
+          <img src="img/capa.jpg" alt="Capa Filme Cidade de Deus">
+          <img onclick="abrirModal()" class="close" src="img/close.png" alt="Sair">
+          <ul>
+            <li>
+              <button class="button play">
+                <i class="fas fa-play"></i>
+                ASSISTIR AGORA
+              </button>
+            </li>
+            <li>
+              <span><i class="far fa-check-circle"></i></span>
+            </li>
+            <li>
+              <span><i class="far fa-thumbs-up"></i></span>
+            </li>
+            <li>
+              <span><i class="far fa-thumbs-down"></i></span>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-body">
+          <div>
+            <h4>
+              <span>99% relevante</span>
+              <span>2h 15min</span>
+              <span><i>+18</i></span>
+              <span>2002</span>
+            </h4>
+            <h2>Cidade de Deus</h2>
+            <p>Buscapé é um jovem morador da Cidade de Deus que cresce em meio à violência. Com medo de se tornar um bandido, enxerga na fotografia uma oportunidade de ter uma vida digna.</p>
+          </div>
+          <aside>
+            <p><spam>Elenco: </spam>Alice Braga, Seu Jorge, Matheus Nachtergaele e Thiago Martins</p>
+            <p><spam>Generos: </spam>Drama, Policial</p>
+            <p><spam>Cenas e momentos: </spam>Violencia</p>
+          </aside>
+        </div>
+      </div>
+  </div>
+
   <!-- BIDEO SCRIPT -->
   <script src="./js/bideo.js"></script>
   <script src="./js/main.js"></script>
@@ -130,6 +169,11 @@
   <script>
     if (window.location.host.indexOf('github.io') !== -1 && window.location.protocol !== "https:") {
       window.location.protocol = "https";
+    }
+
+    function abrirModal() {
+      const modal = document.querySelector('.modal-overlay');
+      modal.classList.toggle('active')
     }
   </script>
 
